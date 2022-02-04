@@ -1,0 +1,55 @@
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+}
+div, section, header, footer, p, h1, h2 {
+	box-sizing: border-box;
+}
+a {
+	color: royalblue;
+}
+img {
+	max-width: 100%; /* 최대 width를 부모의 width로 */
+	height: auto; /* 이미지 원본 비율에 맞게 */
+}
+.scene-img {
+	max-height: 100vh; /* 최대 height를 브라우저의 height로 */
+}
+.global-width {
+	max-width: 620px;
+	margin: 0 auto; /* 좌우 가운데 정렬 */
+	padding: 0 1rem; /* 1rem = 최상위 루트 html의 디폴트 size = 16px */
+}
+.graphic-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center; /* 상하 정렬 */
+	justify-content: center; /* 좌우 정렬 */
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s;
+}
+.visible {
+	opacity: 1;
+}
+.scroll-graphic {
+	position: sticky;
+	top: 0; /* 부모 영역 스크롤 끝날 때까지 고정 */
+	height: 100vh; /* 1vh = 브라우저 높이의 100분의 1 */
+}
+.scroll-text {
+	position: relative; /* 이미지 앞으로 이동 */
+	padding-bottom: 1px; /* 하단 margin 병합 방지용 */
+}
+.step {
+	margin-bottom: 60vh;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
