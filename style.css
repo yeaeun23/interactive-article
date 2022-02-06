@@ -33,6 +33,7 @@ img {
 	height: 100%;
 	opacity: 0;
 	transition: 0.5s;
+	will-change: opacity;
 }
 .visible {
 	opacity: 1;
@@ -41,6 +42,7 @@ img {
 	position: sticky;
 	top: 0; /* 부모 영역 스크롤 끝날 때까지 고정 */
 	height: 100vh; /* 1vh = 브라우저 높이의 100분의 1 */
+	overflow-x: hidden;
 }
 .scroll-text {
 	position: relative; /* 이미지 앞으로 이동 */
@@ -52,4 +54,23 @@ img {
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.bird {
+	position: absolute;
+	left: 0;
+	bottom: 70%;
+	width: 100px;
+	transform: translateX(-100%); /* 화면 바깥으로 */
+	transition: 1.5s 0.5s linear; /* 재생시간 지연시간 일정하게*/
+}
+[data-index="5"] .bird {
+	left: 30%;
+	bottom: 30%;
+}
+.global-footer {
+	padding: 2rem 0;
+	text-align: center;
+}
+.strikethrough {
+	text-decoration: line-through; /* 취소선 */
 }
