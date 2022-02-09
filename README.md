@@ -1,14 +1,16 @@
 # interactive-article
 
+- 개발 100%
+
 - 온라인 강의 참고
 
   https://inf.run/dMz4
   
 ## 1. 기능
 
-- 인터랙티브 기사
+- 인터랙티브 컨텐츠 (반응형 UI)
 
-  : CSS Position(sticky), CSS Animation, JS InteractionObserver
+  : CSS Position(sticky), CSS Animation, JS IntersectionObserver
 
 ## 2. 화면 예시
 
